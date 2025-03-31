@@ -15,7 +15,7 @@ const ItensTags = styled.section`
 
     @media (max-width: 425px) {
         display: block;
-        font-size: 14px;
+        font-size: 10px;
     }
 `;
 
