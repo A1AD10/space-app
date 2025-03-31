@@ -13,6 +13,10 @@ const ItensTags = styled.section`
         margin-right: 70px;
     }
 
+    @media (max-width: 425px) {
+        display: block;
+        font-size: 14px;
+    }
 `;
 
 const BotaoAtivo = styled.div`

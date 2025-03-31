@@ -20,6 +20,14 @@ const CampoInput = styled.input`
     &::placeholder {
         color: #D9D9D9;
     }
+
+    @media (max-width: 768px) {
+        width: 500px;
+    }
+
+    @media (max-width: 425px) {
+        width: 360px;
+    }
     
 `;
 
@@ -29,11 +37,25 @@ const CampoSearch = styled.img`
     top: 12%;
     width: 32px;
     height: 32px;
+
+    @media (max-width: 425px) {
+        left: 90%;
+        bottom: 140%; 
+    }
+    
 `;
 
 const Campo = styled.div`
     display: flex;
     flex-direction: row-reverse;
+    align-items: center;
+
+    @media (max-width: 425px) {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        margin-right: 8%;
+    }
 `
 
 

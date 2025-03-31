@@ -8,6 +8,10 @@ const Imagens = styled.img`
     width: 240px;
     height: 173px;
     border-radius: 20px;
+
+    @media (max-width: 425px) {
+        width: 340px;
+    }
 `
 
 const ImagensPopulares = ({ foto }) => {

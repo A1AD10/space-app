@@ -8,6 +8,10 @@ import { useState } from "react"
 
 const GaleriaContainer = styled.div`
     display: flex;
+
+    @media (max-width: 425px) {
+        display: block;
+    }
 `
 
 const SecaoFluida = styled.section`

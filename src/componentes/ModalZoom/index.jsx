@@ -19,6 +19,14 @@ const DialogEstilizado = styled.dialog`
     width: 1156px;
     display: grid;
     justify-items: center;
+
+    @media (max-width: 768px) {
+        width: 720px;
+    }
+
+    @media (max-width: 425px) {
+        width: 90%;
+    }
 `
 const Close = styled.button`
     position: absolute;

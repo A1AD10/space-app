@@ -19,6 +19,20 @@ const Titulo = styled.div`
         max-width: 300px;
         position: relative;
     }
+
+    @media (max-width: 768px) {
+        height: 25vh;
+        h2 {
+            top: 15px;
+        }
+    }
+
+    @media (max-width: 425px) {
+        h2 {
+            font-size: 6vw;
+            left: 5%;
+        }
+    }
 `
 
 

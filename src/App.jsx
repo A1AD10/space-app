@@ -18,18 +18,31 @@ const FundoGradiente = styled.div`
 const MainContainer = styled.main`
   display: flex;
   gap: 24px;
-`
 
-const AppContainer = styled.div`
-  width: 1440px;
-  margin: 0 auto;
-  max-width: 100%;
-`
+  
+  @media (max-width: 768px) {
+    flex-direction: column; 
+    gap: 16px;
+  }
+`;
+
 
 const ConteutdoGaleria = styled.section`
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+
+  
+  @media (max-width: 768px) {
+    padding: 0 16px; 
+  }
+`;
+
+
+const AppContainer = styled.div`
+  width: 1440px;
+  margin: 0 auto;
+  max-width: 100%;
 `
 
 const App = () => {
@@ -78,15 +91,23 @@ const App = () => {
     }))
   }
 
+  const [barraVisivel, setBarraVisivel] = useState(false)
+
+  const exibirBarra = () => {
+    setBarraVisivel(!barraVisivel)
+  }
   
+  const fechaBarra = () => {
+    setBarraVisivel(false)
+  }
 
   return (
     <FundoGradiente>
       <EstilosGlobais/>
       <AppContainer>
-        <Cabecalho campoBusca={busca}/>
+        <Cabecalho campoBusca={busca} exibirBarra={exibirBarra}/>
         <MainContainer>
-          <BarraLateral/>
+          <BarraLateral exibindo={barraVisivel} fechaBarra={fechaBarra}/>
           <ConteutdoGaleria>
             <TituloEstilizado/>
             <Galeria 

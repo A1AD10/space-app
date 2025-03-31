@@ -19,6 +19,10 @@ const BotaoVerMais = styled.button`
     background: transparent;
     border: 2px solid #C98CF1;
     border-radius: 12px;
+
+    @media (max-width: 425px) {
+        width: 340px;
+    }
 `
 
 const Populares = ({ fotosPop = [] }) => {

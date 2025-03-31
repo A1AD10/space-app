@@ -14,6 +14,14 @@ const Footer = styled.footer`
         font-size: 18px;
         letter-spacing: 2px;
     }
+
+    @media (max-width: 425px) {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        flex-direction: column-reverse;
+        padding-bottom: 30px;
+    }
 `
 
 const BoxIcones = styled.div`
