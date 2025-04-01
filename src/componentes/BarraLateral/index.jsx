@@ -11,7 +11,7 @@ const FechaMenu = styled.button`
         border: none;
         background: transparent;
         display: ${(props) => (props.exibindo ? 'block' : 'none')};
-        position: fixed;
+        position: absolute;
         top: 0;
         left: 56%;
         z-index: 2;
@@ -39,7 +39,7 @@ const ListaEstilizada = styled.ul`
     height: 63%;
     padding: 10px;
     flex-direction: column;
-    position: fixed;
+    position: absolute;
     top: 0;
     z-index: 1;
     justify-content: center;
